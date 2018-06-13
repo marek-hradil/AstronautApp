@@ -1,0 +1,98 @@
+.card {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid var(--gray);
+    background: var(--white);
+    &__heading{
+      padding-left: 1rem;
+    }
+}
+.error {
+  display: block;
+  font-size: 1rem;
+  background: red;
+  color: var(--white);
+  padding: 0.25rem 0.5rem;
+  margin-top: 1rem;
+}
+.table {
+    width: 100%;
+    text-align:center;
+    td,th {
+      padding: 1rem 0;
+    }
+    thead th{
+      border-bottom: 1px solid var(--gray);
+    }
+    td.delete{
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+        color: red;
+      }
+    }
+    td[contenteditable="true"]{
+      border-bottom: 3px solid var(--primary);
+    }
+    .button-inside{
+      padding:0;
+    }
+}
+button.button--no-border{
+  border: 0;
+}
+button.button--delete{
+  color: red;
+  &:hover,&:focus{
+    background: red;
+    color: var(--white); 
+  }
+}
+.button {
+  padding: 0.75rem;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  background: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover, &:focus {
+    background: var(--primary);
+    color: var(--white);
+  }
+}
+.label {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.form {
+  &__group {
+    padding: 1rem;
+  }
+}
+.input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--gray);
+  transition: 0.5s all;
+  &:hover,&:focus {
+    outline: 0;
+    border-bottom-color: var(--primary);
+  }
+  &[type="number"] {
+    margin: 0 0.5rem;
+    &:first-child, &:nth-child(2) {
+      width: 3rem;
+    }
+    &:last-child {
+      width:auto;
+    }
+  }
+}

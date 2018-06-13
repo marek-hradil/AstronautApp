@@ -1,0 +1,101 @@
+.card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--gray);
+  background: var(--white);
+}
+.card__heading {
+  padding-left: 1rem;
+}
+.error {
+  display: block;
+  font-size: 1rem;
+  background: red;
+  color: var(--white);
+  padding: 0.25rem 0.5rem;
+  margin-top: 1rem;
+}
+.table {
+  width: 100%;
+  text-align: center;
+}
+.table td,
+.table th {
+  padding: 1rem 0;
+}
+.table thead th {
+  border-bottom: 1px solid var(--gray);
+}
+.table td.delete {
+  cursor: pointer;
+}
+.table td.delete:hover {
+  text-decoration: underline;
+  color: red;
+}
+.table td[contenteditable="true"] {
+  border-bottom: 3px solid var(--primary);
+}
+.table .button-inside {
+  padding: 0;
+}
+button.button--no-border {
+  border: 0;
+}
+button.button--delete {
+  color: red;
+}
+button.button--delete:hover,
+button.button--delete:focus {
+  background: red;
+  color: var(--white);
+}
+.button {
+  padding: 0.75rem;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  background: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background: var(--primary);
+  color: var(--white);
+}
+.label {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.form__group {
+  padding: 1rem;
+}
+.input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--gray);
+  transition: 0.5s all;
+}
+.input:hover,
+.input:focus {
+  outline: 0;
+  border-bottom-color: var(--primary);
+}
+.input[type="number"] {
+  margin: 0 0.5rem;
+}
+.input[type="number"]:first-child,
+.input[type="number"]:nth-child(2) {
+  width: 3rem;
+}
+.input[type="number"]:last-child {
+  width: auto;
+}
