@@ -15,7 +15,7 @@
     "apollo-link-http": "^1.5.4",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
-    "vee-validate": "^2.1.0-beta.1",
+    "vee-validate": "^2.2.15",
     "vue": "^2.5.16",
     "vue-apollo": "^3.0.0-beta.16",
     "vue-class-component": "^6.0.0",
